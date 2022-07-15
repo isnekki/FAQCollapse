@@ -1,0 +1,83 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #eeeff1;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 80%;
+}
+
+.faqDiv {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid grey;
+    height: 120px;
+    transition: height 500ms ease;
+}
+
+.faqQuestionDiv {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    width: 100%;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.faqQuestion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.faqDiv.closed {
+    background-color: lightpink;
+    height: 70px;
+    overflow: hidden;
+    transition: height 500ms ease;
+}
+
+.faqExpandButton {
+    background-color: transparent;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAbklEQVQ4je3SMQqAMAyF4d96bg9gxd2tbh6zLrEUhdpEQYe+qRDy8SCFlt9mADzgDLsOmMRImYEIBCXqZCeKkdIBiww2oK/E1lIRDXqLadBqrAZVYyXUjOVtjguG09vyvS5NH2N5Uw+Mb2AtH2QHHY0lz5F7D5IAAAAASUVORK5CYII=');
+    border: none;
+    background-size: contain;
+    border-radius: 30px;
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.faqExpandButton.close {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABmJLR0QA/wD/AP+gvaeTAAAAcElEQVQokc2SYQqAIAyFv4MFUmfywnaEst/2ZwMzZ2IQPRDZ2xt7m8If4IAgt5VfrXwAEhArAid8Et0NE7CJ4ACWjN8zfm5Z1w4R8EVsjXRxoJ305E4e4Yti31s43Hl45nKr1rarDl69c88Pa+U/xAkOoDuHP11kDAAAAABJRU5ErkJggg==');
+}
+
+.faqExpandButton:hover {
+    background-color: grey;
+}
+
+.faqAnswer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 20px;
+}
